@@ -1,0 +1,14 @@
+C:\Users\Admin\source\repos\EmployeeManagement\UnitTestCases\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Admin\source\repos\EmployeeManagement\UnitTestCases\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Admin\source\repos\EmployeeManagement\UnitTestCases\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Admin\source\repos\EmployeeManagement\UnitTestCases\bin\Debug\netcoreapp2.1\UnitTestCases.deps.json
+C:\Users\Admin\source\repos\EmployeeManagement\UnitTestCases\bin\Debug\netcoreapp2.1\UnitTestCases.runtimeconfig.json
+C:\Users\Admin\source\repos\EmployeeManagement\UnitTestCases\bin\Debug\netcoreapp2.1\UnitTestCases.runtimeconfig.dev.json
+C:\Users\Admin\source\repos\EmployeeManagement\UnitTestCases\bin\Debug\netcoreapp2.1\UnitTestCases.dll
+C:\Users\Admin\source\repos\EmployeeManagement\UnitTestCases\bin\Debug\netcoreapp2.1\UnitTestCases.pdb
+C:\Users\Admin\source\repos\EmployeeManagement\UnitTestCases\obj\Debug\netcoreapp2.1\UnitTestCases.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\EmployeeManagement\UnitTestCases\obj\Debug\netcoreapp2.1\UnitTestCases.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\EmployeeManagement\UnitTestCases\obj\Debug\netcoreapp2.1\UnitTestCases.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\EmployeeManagement\UnitTestCases\obj\Debug\netcoreapp2.1\UnitTestCases.AssemblyInfo.cs
+C:\Users\Admin\source\repos\EmployeeManagement\UnitTestCases\obj\Debug\netcoreapp2.1\UnitTestCases.dll
+C:\Users\Admin\source\repos\EmployeeManagement\UnitTestCases\obj\Debug\netcoreapp2.1\UnitTestCases.pdb

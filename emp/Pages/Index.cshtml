@@ -1,0 +1,163 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+
+}
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="~/js/HomeController.js"></script>
+</head>
+
+<body>
+    <div ng-app="MyApp" ng-controller="HomeController">
+
+
+
+        <div class="container">
+            <h2>Employee Details</h2>
+            
+            <div>
+                Search: <input type="text" ng-model="EmployeeModel.search"
+                               placeholder="Enter Emp id to search" />
+                <button type="button" value="Submit" ng-click="GetById(EmployeeModel)">Search</button>
+                <div ng-repeat="emp in SearchedEmployee">
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">EmpId</th>
+                                <th scope="col">FirstName</th>
+                                <th scope="col">LastName</th>
+                                <th scope="col">Contact</th>
+                                <th scope="col">City</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Salary</th>
+                            </tr>
+                        <tbody>
+                            <tr ng-repeat="emp in SearchedEmployee">
+                                <td>{{emp.empId}}</td>
+                                <td>{{emp.firstName}}</td>
+                                <td>{{emp.lastName}}</td>
+                                <td>{{emp.contact}}</td>
+                                <td>{{emp.city}}</td>
+                                <td>{{emp.email}}</td>
+                                <td>{{emp.salary}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                      </div>
+                
+                 </div>
+           
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">EmpId</th>
+                        <th scope="col">FirstName</th>
+                        <th scope="col">LastName</th>
+                        <th scope="col">Contact</th>
+                        <th scope="col">City</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Salary</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in ListOfEmployee ">
+                        <td >
+                        <input style="border:none" type="text"  ng-model="item.empId"/>
+                        </td>
+
+                        <td>
+                            <input style="border:none" type="text" ng-model="item.firstName" />
+                        </td>
+                        <td>
+                            <input style="border:none" type="text" ng-model="item.lastName" />
+                        </td>
+
+                        <td>
+                            <input style="border:none" type="text" ng-model="item.contact" />
+                        </td>
+
+                        <td>
+                            <input style="border:none" type="text" ng-model="item.city" />
+                        </td>
+
+                        <td>
+                            <input style="border:none" type="text" ng-model="item.email" />
+                        </td>
+
+                        <td>
+                            <input style="border:none" type="text" ng-model="item.salary" />
+                        </td>
+
+                        <td>
+                            <button ng-click="UpdateEmployee(item)">
+                                <span class="glyphicon glyphicon-pencil">update</span>
+                            </button>
+                        </td>
+
+                        <td>
+                            <button type="button" class="btn btn-primary btn-xs" value="Submit" ng-click="DeleteEmp(item.empId)">Delete</button>
+                        </td>
+                    </tr>  
+                </tbody>
+            </table>
+
+        </div>
+
+        <h1>Employee Information Form:</h1>
+
+        <form ng-submit="InsertData(EmployeeModel)">
+            <label for="EmpId">EmpId: </label>
+            <br />
+            <input type="text" id="EmpId" ng-model="EmployeeModel.EmpId" />
+            <br />
+            <label for="FirstName">First Name: </label>
+            <br />
+            <input type="text" id="FirstName" ng-model="EmployeeModel.FirstName" />     
+            <br />
+
+            <label for="Lastname">Last Name</label>
+            <br />
+            <input type="text" id="Lastname" ng-model="EmployeeModel.LastName" />
+            <br />
+
+            <label for="Contact">Contact</label>
+            <br />
+            <input type="text" ng-model="EmployeeModel.Contact" />
+            <br />
+            <label for="City">City</label>
+            <br />
+            <input type="text" ng-model="EmployeeModel.City" />
+            <br />
+            <br />
+
+            <label for="Email">Email</label>
+            <br />
+            <input type="text" ng-model="EmployeeModel.Email" />
+            <br />
+            <label for="Salary">Salary</label>
+            <br />
+            <input type="text" ng-model="EmployeeModel.Salary" />
+            <br />
+            <br />
+            <input type="button" class="btn btn-warning" value="Submit" ng-click="InsertData(EmployeeModel)" />
+
+        </form>
+
+    </div>
+
+</body>

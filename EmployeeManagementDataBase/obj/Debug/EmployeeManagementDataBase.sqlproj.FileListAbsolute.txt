@@ -1,0 +1,6 @@
+C:\Users\Admin\source\repos\EmployeeManagement\EmployeeManagementDataBase\bin\Debug\EmployeeManagementDataBase.dacpac
+C:\Users\Admin\source\repos\EmployeeManagement\EmployeeManagementDataBase\bin\Debug\EmployeeManagementDataBase.dll
+C:\Users\Admin\source\repos\EmployeeManagement\EmployeeManagementDataBase\bin\Debug\EmployeeManagementDataBase.pdb
+C:\Users\Admin\source\repos\EmployeeManagement\EmployeeManagementDataBase\obj\Debug\EmployeeManagementDataBase.sqlprojAssemblyReference.cache
+C:\Users\Admin\source\repos\EmployeeManagement\EmployeeManagementDataBase\obj\Debug\EmployeeManagementDataBase.dll
+C:\Users\Admin\source\repos\EmployeeManagement\EmployeeManagementDataBase\obj\Debug\EmployeeManagementDataBase.pdb
